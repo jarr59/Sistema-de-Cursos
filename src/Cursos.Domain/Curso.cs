@@ -1,12 +1,7 @@
 namespace Cursos.Domain;
 
-public class Curso
+public class Curso : BaseEntity
 {
-    /// <summary>
-    /// Representa el identificador
-    /// </summary>
-    public Guid Id { get; set; }
-
     /// <summary>
     /// Titulo del curso
     /// </summary>

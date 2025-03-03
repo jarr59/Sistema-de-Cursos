@@ -16,4 +16,14 @@ public class Instructor : BaseEntity
     /// Grado academico del instructor
     /// </summary>
     public string? Grado { get; set; }
+
+    /// <summary>
+    /// Representa los cursos de este instructor
+    /// </summary>
+    public ICollection<Curso>? Cursos { get; set; }
+
+    /// <summary>
+    /// Representa los cursos
+    /// </summary>
+    public ICollection<CursoInstructor>? CursoInstructores { get; set; }
 }

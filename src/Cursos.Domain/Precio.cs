@@ -16,4 +16,14 @@ public class Precio : BaseEntity
     /// Representa el precio en promocion
     /// </summary>
     public decimal PrecioPromocion { get; set; }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public ICollection<Curso>? Cursos { get; set; }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public ICollection<CursoPrecio>? CursoPrecios { get; set; }
 }
